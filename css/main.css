@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(45deg, #1a0033, #330033, #660066);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dropzone {
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #ff6b00;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(26, 0, 51, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.5);
+}
+
+.dropzone.dragover {
+    background: rgba(255, 107, 0, 0.2);
+    border-color: #ff9100;
+    transform: scale(1.02);
+}
+
+#preview {
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.2);
+}
+
+.controls {
+    margin: 20px auto;
+    max-width: 500px;
+    background: rgba(26, 0, 51, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
+}
+
+.controls label {
+    color: #ff6b00;
+    margin-right: 10px;
+}
+
+.controls input {
+    background: rgba(26, 0, 51, 0.7);
+    border: 1px solid #ff6b00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    outline: none;
+}
+
+.controls input:focus {
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff6b00, #ff9100);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.5);
+    background: linear-gradient(45deg, #ff9100, #ff6b00);
+}
